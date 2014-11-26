@@ -12,8 +12,6 @@ package utfpr.ct.dainf.if62c.pratica;
 public class SomaMatrizesIncompativeisException extends MatrizesIncompativeisException {
 
     public SomaMatrizesIncompativeisException(Matriz m1, Matriz m2) {
-        super(String.format("As matrizes %dX%d e %dX%d não podem ser somadas",
-                m1.getMatriz().length, m1.getMatriz()[0].length,
-                m2.getMatriz().length, m2.getMatriz()[0].length));
+        super("Multiplicação", m1, m2);
     }
 }

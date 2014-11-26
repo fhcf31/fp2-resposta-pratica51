@@ -11,8 +11,8 @@ package utfpr.ct.dainf.if62c.pratica;
  */
 
 public class MatrizInvalidaException extends Exception {
-    private int m;
-    private int n;
+    private final int m;
+    private final int n;
     
     public MatrizInvalidaException(int m, int n){
         super(String.format("A matriz de %d linhas e %d colunas não pode ser criada", 
